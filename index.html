@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jugando con selectores</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <div id="container">
+    <h1>Validación en Javascript</h1>
+    <p>La principal utilidad de JavaScript en el manejo de los formularios es <span>la validación de los datos introducidos por los usuarios.</span>
+      Antes de enviar un formulario al servidor, se recomienda validar mediante JavaScript los datos insertados por el usuario.
+      De esta forma, si el usuario ha cometido algún error al rellenar el formulario,<span> se le puede notificar de forma instantánea</span>, sin necesidad de esperar la respuesta del servidor.</p>
+      <h3>Validar un número de teléfono</h3>
+      <p>
+        Se trata de forzar al usuario a <u>introducir un valor en un <em>cuadro de texto o textarea</em> en los que sea obligatorio</u>.
+        Los números de teléfono pueden ser indicados de formas muy diferentes: con prefijo nacional, con prefijo internacional, agrupado por pares, separando los números con guiones, etc.
+      </p>
+      <table>
+        <tr>
+          <td>Número</td>
+          <td>Expresión regular</td>
+          <td>Formato</td>
+        </tr>
+        <tr>
+          <td>900900900</td>
+          <td>/^\d{9}$/</td>
+          <td>9 cifras seguidas</td>
+        </tr>
+        <tr>
+          <td>900-900-900</td>
+          <td>/^\d{3}-\d{3}-\d{3}$/</td>
+          <td>9 cifras agrupadas de 3 en 3 y separadas por guiones</td>
+        </tr>
+        <tr>
+          <td>900 900900</td>
+          <td>/^\d{3}\s\d{6}$/</td>
+          <td>9 cifras, las 3 primeras separadas por un espacio</td>
+        </tr>
+      </table>
+      <div id="nota">
+        <p>
+        Notificar los errores de forma inmediata mediante JavaScript mejora la satisfacción del usuario con la aplicación (lo que técnicamente se conoce como "mejorar la experiencia de usuario") y ayuda a reducir la carga de procesamiento en el servidor.
+        </p>
+        <p>
+        Normalmente, la validación de un formulario consiste en llamar a una <span> función de validación</span> cuando el usuario pulsa sobre el botón
+         de envío del formulario. En esta función, se comprueban si los valores que ha introducido el usuario cumplen las restricciones
+         impuestas por la aplicación.
+        </p>
+        <p>
+        Aunque existen tantas posibles comprobaciones como elementos de formulario diferentes,
+        algunas comprobaciones son muy habituales: <u> que se rellene un campo obligatorio, que se seleccione el valor de una lista desplegable,
+         que la dirección de email indicada sea correcta, que la fecha introducida sea lógica, que se haya introducido un número donde así se requiere, etc.</u>
+        </p>
+    </div>
+  </div>
+
+
+</body>
+</html>

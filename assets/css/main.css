@@ -1,0 +1,45 @@
+*{
+  font-family: sans-serif;
+}
+#container{
+  margin: 5px;
+  padding:0px 10% 0px 10%;
+  vertical-align: middle;
+}
+h1{
+  color: #008484;
+}
+p{
+  text-align: justify;
+}
+p >span:first-child{
+  color: red;
+  font-weight: bold;
+}
+#container p >span:last-child{
+  color: orange;
+}
+h3{
+  color: blue;
+}
+u{
+  color: red;
+}
+u > em{
+  color: blue;
+}
+table{
+  width: 100%;
+}
+tr:first-child{
+  color: orange;
+  font-weight: bold;
+}
+td{
+  border: 1px solid #ddd;
+  text-align: center;
+
+}
+#nota{
+  color: #998c0c;
+}
